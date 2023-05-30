@@ -11,5 +11,5 @@ class Program
         FirstMethod.SplitSentence(input);
         SecondMethod.SplitSentence(input);
         ThirdMethod.SplitSentence(input);
-        }
+    }
 }
