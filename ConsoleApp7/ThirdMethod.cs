@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp7
 {
-    public class SecondMethod
+    public class ThirdMethod
     {
         public static void SplitSentence(string input)
         {
