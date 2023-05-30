@@ -10,7 +10,7 @@ namespace ConsoleApp7
     {
         public static void SplitSentence(string input)
         {
-            Console.WriteLine("Second method ....................");
+            Console.WriteLine("Third method ....................");
 
             string word = "";
             foreach (char c in input)
