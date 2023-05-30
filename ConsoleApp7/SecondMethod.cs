@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp7
 {
-   public class ThirdMethod
+   public class SecondMethod
     {
         public static int CountLength(string input)//Метод который считает размер строки,для того чтобы в будущем создать массив такого размера
         {
