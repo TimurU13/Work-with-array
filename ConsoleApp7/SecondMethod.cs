@@ -58,7 +58,7 @@ namespace ConsoleApp7
                 sentence[sentence.Length - 1] = wordBuilder.ToString();
                 wordBuilder.Clear();
             }
-            Console.WriteLine("Third method.................");
+            Console.WriteLine("Second method.................");
             foreach (string words in sentence)
             {
                 Console.WriteLine(words);
