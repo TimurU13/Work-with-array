@@ -8,7 +8,7 @@ namespace ConsoleApp7
 {
     public class SplitSentenceToList
     {
-        public List<string> SplitSentenceMethod1(string input, char[] separateSymbols)
+        public List<string> SplitSentence(string input, char[] separateSymbols)
         {
             if (string.IsNullOrEmpty(input) || separateSymbols == null)
             {

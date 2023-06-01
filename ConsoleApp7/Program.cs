@@ -10,7 +10,7 @@ class Program
         string input = Console.ReadLine();
         char[] separateSymbols = { ' ', ',', ':', ';', '.' };
         SplitSentenceToList splitSentence = new SplitSentenceToList();
-        List<string> words = splitSentence.SplitSentenceMethod1(input, separateSymbols);
+        List<string> words = splitSentence.SplitSentence(input, separateSymbols);
         if (words == null || words.Count == 0)
         {
         Console.WriteLine("Empty input");
