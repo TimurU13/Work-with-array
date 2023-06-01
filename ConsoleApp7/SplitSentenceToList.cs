@@ -33,7 +33,6 @@ namespace ConsoleApp7
                     words.Add(wordBuilder.ToString());
                     wordBuilder.Clear();
                 }
-
             }
             if (wordBuilder.Length > 0)
             {
