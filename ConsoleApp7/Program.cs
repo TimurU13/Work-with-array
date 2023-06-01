@@ -8,8 +8,47 @@ class Program
     {
         Console.WriteLine("Введите строку:");
         string input = Console.ReadLine();
-        FirstMethod.SplitSentence(input);
-        SecondMethod.SplitSentence(input);
-        ThirdMethod.SplitSentence(input);
+        char[] separateSymbols = { ' ', ',', ':', ';', '.' };
+        SplitSentenceToList splitSentence = new SplitSentenceToList();
+        List<string> words = splitSentence.SplitSentenceMethod1(input, separateSymbols);
+        if (words == null || words.Count == 0)
+        {
+            Console.WriteLine("Empty input");
+        }
+        else
+        {
+            foreach (string word in words)
+            {
+                Console.WriteLine(word);
+            }
+        }
+        //Method2...........................................................
+
+        splitSentence.SplitSentenceMethod2(input);
+        if (words == null || words.Count == 0)
+        {
+            Console.WriteLine("Empty input");
+        }
+        else
+        {
+            foreach (string word in words)
+            {
+                Console.WriteLine(word);
+            }      
+        }
+        //Method3............................................................
+        splitSentence.SplitSentenceMethod3(input);
+        if (words == null || words.Count == 0)
+        {
+            Console.WriteLine("Empty input");
+
+        }
+        else
+        {
+            foreach (string word in words)
+            {
+                Console.WriteLine(word);
+            }
+        }
     }
 }
