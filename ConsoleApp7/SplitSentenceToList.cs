@@ -45,6 +45,7 @@ namespace ConsoleApp7
         }   
         public Array SplitSentenceMethod2(string input)
         {
+            Console.WriteLine("Second method.................");
             if (string.IsNullOrEmpty(input))
             {
                 return null;
@@ -74,9 +75,7 @@ namespace ConsoleApp7
                 words[words.Length - 1] = wordBuilder.ToString();
                 wordBuilder.Clear();
             }
-            Console.WriteLine("Second method.................");
-            return words;
-
+         return words;
         }
         public int CountLength(string input)//Метод который считает размер строки,для того чтобы в будущем создать массив такого размера
         {
@@ -100,32 +99,6 @@ namespace ConsoleApp7
                 }
             }
             return length;
-        }
-        public List<String> SplitSentenceMethod3(string input)
-        {
-            if (string.IsNullOrEmpty(input))
-            {
-                return null;
-            }
-            Console.WriteLine("Third method ....................");
-            List<string> words = new List<string>();
-            string word = "";
-            foreach (char c in input)
-            {
-                if (!char.IsWhiteSpace(c))
-                {
-                    word += c;
-                }
-                else
-                {
-                    if (!string.IsNullOrWhiteSpace(word))
-                    {
-                        words.Add(word);
-                        word = "";
-                    }   
-                }
-            }
-            return words;
         }
     }
 }

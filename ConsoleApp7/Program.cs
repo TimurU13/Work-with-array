@@ -13,42 +13,27 @@ class Program
         List<string> words = splitSentence.SplitSentenceMethod1(input, separateSymbols);
         if (words == null || words.Count == 0)
         {
-            Console.WriteLine("Empty input");
+        Console.WriteLine("Empty input");
         }
         else
         {
             foreach (string word in words)
-            {
-                Console.WriteLine(word);
-            }
+                {
+                   Console.WriteLine(word);
+                }
         }
         //Method2...........................................................
-
-        splitSentence.SplitSentenceMethod2(input);
-        if (words == null || words.Count == 0)
+        Array wordsSecondMethod = splitSentence.SplitSentenceMethod2(input);
+        if (wordsSecondMethod == null)
         {
             Console.WriteLine("Empty input");
         }
         else
         {
-            foreach (string word in words)
+            foreach (string word in wordsSecondMethod)
             {
                 Console.WriteLine(word);
             }      
-        }
-        //Method3............................................................
-        splitSentence.SplitSentenceMethod3(input);
-        if (words == null || words.Count == 0)
-        {
-            Console.WriteLine("Empty input");
-
-        }
-        else
-        {
-            foreach (string word in words)
-            {
-                Console.WriteLine(word);
-            }
         }
     }
 }
