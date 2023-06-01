@@ -22,18 +22,5 @@ class Program
                    Console.WriteLine(word);
                 }
         }
-        //Method2...........................................................
-        Array wordsSecondMethod = splitSentence.SplitSentenceMethod2(input);
-        if (wordsSecondMethod == null)
-        {
-            Console.WriteLine("Empty input");
-        }
-        else
-        {
-            foreach (string word in wordsSecondMethod)
-            {
-                Console.WriteLine(word);
-            }      
-        }
     }
 }
