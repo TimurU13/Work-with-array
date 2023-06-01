@@ -40,6 +40,34 @@ namespace ConsoleApp7
                 wordBuilder.Clear();
             }
             return words;
-        }   
+        }
+        public List<string> SplitSentenceMethod2(string input, char[] separateSymbols)
+        {
+            Console.WriteLine("Second method......................");
+            if (string.IsNullOrEmpty(input) || separateSymbols == null)
+            {
+                return null;
+            }
+            List<string> words = new List<string>();
+            StringBuilder wordBuilder = new StringBuilder();
+            foreach (char symbol in input)
+            {
+                if (!separateSymbols.Contains(symbol))
+                {
+                    wordBuilder.Append(symbol);
+                }
+                else if (wordBuilder.Length > 0)
+                {
+                    words.Add(wordBuilder.ToString());
+                    wordBuilder.Clear();
+                }
+            }
+            if (wordBuilder.Length > 0)
+            {
+                words.Add(wordBuilder.ToString());
+                wordBuilder.Clear();
+            }
+            return words;
+        }
     }
 }

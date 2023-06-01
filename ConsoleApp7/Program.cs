@@ -10,17 +10,30 @@ class Program
         string input = Console.ReadLine();
         char[] separateSymbols = { ' ', ',', ':', ';', '.' };
         SplitSentenceToList splitSentence = new SplitSentenceToList();
-        List<string> words = splitSentence.SplitSentence(input, separateSymbols);
-        if (words == null || words.Count == 0)
+        List<string> ListWords = splitSentence.SplitSentence(input, separateSymbols);
+        if (ListWords == null || ListWords.Count == 0)
         {
-        Console.WriteLine("Empty input");
+            Console.WriteLine("Empty input");
         }
         else
         {
-            foreach (string word in words)
-                {
-                   Console.WriteLine(word);
-                }
+            foreach (string word in ListWords)
+            {
+                Console.WriteLine(word);
+            }
+        }
+        //Method 2...................................
+        List<string> ListWordsSecondMethod = splitSentence.SplitSentenceMethod2(input, separateSymbols);
+        if (ListWordsSecondMethod == null || ListWordsSecondMethod.Count == 0)
+        {
+            Console.WriteLine("Empty input");
+        }
+        else
+        {
+            foreach (string word in ListWordsSecondMethod)
+            {
+                Console.WriteLine(word);
+            }
         }
     }
 }
